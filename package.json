@@ -2,9 +2,10 @@
   "name": "chai-and-backend",
   "version": "1.0.0",
   "description": "a backend at chai aur code channel - youtube",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,9 @@
     "prettier": "^3.5.3"
   },
   "dependencies": {
-    "chai-and-backend": "file:"
+    "chai-and-backend": "file:",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
   }
 }
